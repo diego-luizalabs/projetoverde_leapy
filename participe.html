@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participe | Coletivo Território Vivo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="sustainability-effect"></canvas>
+    <div class="background-tree"></div>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Território Vivo</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#missao">Nossa Missão</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="pilares.html">Pilares</a></li> 
+                    <li><a href="participe.html" class="cta-button">Participe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="participe-intro-section page-section">
+            <div class="container text-center">
+                <h1>Faça parte da mudança.</h1>
+                <p class="subtitle-participe">Sua energia e apoio são as sementes que transformam nossos territórios. Junte-se a nós!</p>
+                
+                <div class="participe-image-wrapper">
+                    <img src="assets/participe-hero.jpg" alt="Voluntários plantando uma árvore" class="participe-main-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="formas-de-ajudar" class="page-section">
+            <div class="container">
+                <h2>Existem muitas formas de colaborar</h2>
+                <div class="help-options-container">
+                    <div class="help-card">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>Seja Voluntário(a)</h3>
+                        <p>Doe seu tempo e talento em nossas ações nos parques e centros comunitários. De mutirões de plantio a oficinas educativas, suas mãos fazem a diferença.</p>
+                        <a href="#formulario-voluntario" class="cta-button-secondary">Quero ser voluntário</a>
+                    </div>
+                    <div class="help-card">
+                        <i class="fas fa-hand-holding-dollar"></i>
+                        <h3>Faça uma Doação</h3>
+                        <p>Sua contribuição financeira nos ajuda a comprar ferramentas, mudas, materiais pedagógicos e a manter nossos projetos ativos e crescendo.</p>
+                        <a href="#" class="cta-button-secondary">Apoiar financeiramente</a>
+                    </div>
+                    <div class="help-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Seja um Parceiro</h3>
+                        <p>Sua empresa ou organização pode se tornar uma parceira oficial do Coletivo, apoiando projetos específicos e fortalecendo o impacto socioambiental na cidade.</p>
+                        <a href="#" class="cta-button-secondary">Propor parceria</a>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div id="formulario-voluntario" class="form-section">
+                    <h2>Formulário de Voluntariado</h2>
+                    <p class="subtitle">Preencha com seus dados e entraremos em contato em breve!</p>
+                    <form class="volunteer-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone (WhatsApp)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="interests">Áreas de interesse (opcional)</label>
+                            <textarea id="interests" name="interests" rows="4" placeholder="Ex: hortas, educação infantil, eventos, comunicação..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Enviar Inscrição</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Coletivo Território Vivo.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

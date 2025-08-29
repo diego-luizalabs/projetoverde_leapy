@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilares no Território | Coletivo Território Vivo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="sustainability-effect"></canvas>
+    <div class="background-tree"></div>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Território Vivo</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#missao">Nossa Missão</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="pilares.html">Pilares</a></li> 
+                    <li><a href="index.html#participe" class="cta-button">Participe</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="pilares-territorio" class="page-section">
+            <div class="container">
+                <h2>Pilares no Território</h2>
+                <p class="subtitle">Aqui você nos encontra. Explore os locais onde nossa ação acontece.</p>
+                
+                <div class="locations-container">
+                    <!-- Local 1: Parque Ibirapuera -->
+                    <div class="location-card">
+                        <div class="location-grid">
+                            <div class="location-display-box">
+                                <div class="location-photo">
+                                    <img src="assets/parque-ibirapuera.jpg" alt="Vista do Parque Ibirapuera">
+                                </div>
+                                <div class="location-header">
+                                    <h3><i class="fas fa-tree"></i> Parque Ibirapuera</h3>
+                                </div>
+                            </div>
+                            <div class="location-display-box">
+                                <div class="location-map" id="map-ibirapuera"></div>
+                                <div class="location-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Av. Pedro Álvares Cabral - Vila Mariana, SP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-activity">
+                            <p><strong>Nossa Atuação:</strong> O coração verde de São Paulo é o palco para nossas oficinas de educação ambiental e aulas de reforço escolar ao ar livre.</p>
+                        </div>
+                    </div>
+
+                    <!-- Local 2: Parque Villa-Lobos -->
+                    <div class="location-card">
+                        <div class="location-grid">
+                            <div class="location-display-box">
+                                <div class="location-photo">
+                                    <img src="assets/parque-villa-lobos.jpg" alt="Vista do Parque Villa-Lobos">
+                                </div>
+                                <div class="location-header">
+                                    <h3><i class="fas fa-tree"></i> Parque Villa-Lobos</h3>
+                                </div>
+                            </div>
+                            <div class="location-display-box">
+                                <div class="location-map" id="map-villa-lobos"></div>
+                                <div class="location-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Av. Prof. Fonseca Rodrigues, 2001 - Alto de Pinheiros, SP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-activity">
+                            <p><strong>Nossa Atuação:</strong> Desenvolvemos nosso projeto de ciência cidadã, onde voluntários ajudam a monitorar e catalogar as espécies de aves locais.</p>
+                        </div>
+                    </div>
+
+                    <!-- Local 3: Centro Cultural São Paulo -->
+                    <div class="location-card">
+                        <div class="location-grid">
+                            <div class="location-display-box">
+                                <div class="location-photo">
+                                    <img src="assets/centro-cultural-sp.jpg" alt="Vista do Centro Cultural São Paulo">
+                                </div>
+                                <div class="location-header">
+                                    <h3><i class="fas fa-users"></i> Centro Cultural São Paulo</h3>
+                                </div>
+                            </div>
+                            <div class="location-display-box">
+                                <div class="location-map" id="map-ccsp"></div>
+                                <div class="location-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Rua Vergueiro, 1000 - Paraíso, São Paulo - SP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-activity">
+                            <p><strong>Nossa Atuação:</strong> Um de nossos principais polos urbanos, o CCSP sedia nossas oficinas de compostagem, hortas verticais e debates sobre sustentabilidade.</p>
+                        </div>
+                    </div>
+
+                    <!-- Local 4: CDC Vila Guarani -->
+                    <div class="location-card">
+                        <div class="location-grid">
+                            <div class="location-display-box">
+                                <div class="location-photo">
+                                    <img src="assets/cdc-vila-guarani.jpg" alt="Área externa de um centro comunitário">
+                                </div>
+                                <div class="location-header">
+                                    <h3><i class="fas fa-users"></i> CDC Vila Guarani</h3>
+                                </div>
+                            </div>
+                            <div class="location-display-box">
+                                <div class="location-map" id="map-cdc-guarani"></div>
+                                <div class="location-details">
+                                    <p><i class="fas fa-map-marker-alt"></i> Rua Lussanvira, 178 - Vila Guarani, São Paulo - SP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location-activity">
+                            <p><strong>Nossa Atuação:</strong> Na Zona Sul, nossa parceria com o Clube da Comunidade fortalece a gestão do espaço, promovendo eventos culturais e mutirões que unem os moradores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Coletivo Território Vivo.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
